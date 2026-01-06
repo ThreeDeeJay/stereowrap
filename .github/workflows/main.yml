@@ -82,7 +82,7 @@ jobs:
 
     - name: Deps
       run: |
-        sudo apt-file search stubs-soft.h
+        apt-file search stubs-soft.h
         
     - name: List files
       run: ls -R
