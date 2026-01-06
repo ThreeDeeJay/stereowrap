@@ -76,7 +76,12 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
 
     - name: Build
-      run: curl https://raw.githubusercontent.com/lattera/glibc/master/dlfcn/dlfcn.h -o "src/dlfcn.h"
+      run: |
+        curl https://raw.githubusercontent.com/lattera/glibc/master/dlfcn/dlfcn.h -o "dlfcn.h"
+        curl https://raw.githubusercontent.com/lattera/glibc/master/dlfcn/dlfcn.h -o "src/dlfcn.h"
+        
+    - name: List files
+      run: ls -R
       
     - name: Build
       run: make
