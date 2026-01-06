@@ -77,7 +77,6 @@ jobs:
 
     - name: Build
       run: |
-        curl https://raw.githubusercontent.com/lattera/glibc/master/dlfcn/dlfcn.h -o "dlfcn.h"
         curl https://raw.githubusercontent.com/lattera/glibc/master/dlfcn/dlfcn.h -o "src/dlfcn.h"
         
     - name: List files
