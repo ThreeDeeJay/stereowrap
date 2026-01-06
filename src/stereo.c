@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <sys/time.h>
 #include <assert.h>
 #include <unistd.h>
-#include <dlfcn.h>
+#include dlfcn.h
 #include <pwd.h>
 #include <X11/Xlib.h>
 #include <GL/gl.h>
