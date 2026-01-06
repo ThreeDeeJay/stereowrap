@@ -75,10 +75,10 @@ jobs:
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.0.2
 
-    - name: Build
-      run: |
-        curl https://raw.githubusercontent.com/lattera/glibc/master/dlfcn/dlfcn.h -o "src/dlfcn.h"
-        curl https://raw.githubusercontent.com/lattera/glibc/master/include/features.h -o "src/features.h"
+#    - name: Build
+#      run: |
+#        curl https://raw.githubusercontent.com/lattera/glibc/master/dlfcn/dlfcn.h -o "src/dlfcn.h"
+#        curl https://raw.githubusercontent.com/lattera/glibc/master/include/features.h -o "src/features.h"
         
     - name: List files
       run: ls -R
