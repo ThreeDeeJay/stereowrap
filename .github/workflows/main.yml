@@ -79,6 +79,10 @@ jobs:
 #      run: |
 #        curl https://raw.githubusercontent.com/lattera/glibc/master/dlfcn/dlfcn.h -o "src/dlfcn.h"
 #        curl https://raw.githubusercontent.com/lattera/glibc/master/include/features.h -o "src/features.h"
+
+    - name: Deps
+      run: |
+        sudo apt-file search stubs-soft.h
         
     - name: List files
       run: ls -R
